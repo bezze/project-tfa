@@ -1,5 +1,5 @@
 Star Wars The Force Awakens IMDB Review distribution
-
+====================================================
 
 To understand the data beyond the mere stars rating where opinions are difficult to transform into a quantitative result, i.e. people use different scales to rate, I assigned to each review an approval or confidence rating. This number is the percentage of people that found the review "useful", according to IMDB's description of the number. I prefer to interpret this value as the "affinity" or "approval" a user has towards the opinion portrayed in the review. As this number alone is not enough, I also added the weight of the opinion, the number of people who judged the review. It's not the same a 4 stars opinion with 54/1086 approval than a 7 with 845/933. 
 
@@ -35,6 +35,6 @@ To picture the review polarization, I ignored weight and made a 2d histogram of 
 
 The graph shows two well defined density peaks, one around 2.5 stars and 0.85 approval and another a bit more diffuse, but bigger in size around 8 stars and 0.3 apporval ratio. The blobs share roughly the same amount of reviews, easily identifiable as the "bad" and "good" reviews.
 
-```
+##### About
 
 The data used is in the raw.dat file, extracted using the main.py python script on Monday 8th of May, 2017. The columns in the raw.dat file are as follows: stars, usefulness, total. The analysis was also performed in python, using the stats.py script. The files are easily tweakable to further investigate other films. 
