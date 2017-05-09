@@ -27,10 +27,14 @@ Using this data, the average score is
 
 average = 5.905674 
 
-against IMDB's 8.1. They admit using a [weighted average](http://www.imdb.com/help/show_leaf?ratingsexplanation) to "reduce attempts at vote stuffing" adding that "the exact methods we use will not be disclosed". To introduce a bit of context, "The Godfather" rates 9.2, "2001: A Space Odyssey" 8.3, and "Mary Poppins" a sober 7.8. Although this is not the fairest of comparisons, it helps to introduce similar ratings. If one were to only look at the rating distribution, the abnormal peak at 1 would confirm IMDB's fears. But the approval ratio suggests true agreement between users over certain ratings, suggesting IMDB's secret filters are dangerously biased.
+against IMDB's 8.1. They admit using a [weighted average](http://www.imdb.com/help/show_leaf?ratingsexplanation) to "reduce attempts at vote stuffing" adding that "the exact methods we use will not be disclosed". To introduce a bit of context, ["The Godfather"](http://www.imdb.com/title/tt0068646/?ref_=nv_sr_1) rates 9.2, ["2001: A Space Odyssey"](http://www.imdb.com/title/tt0062622/?ref_=nv_sr_1) 8.3, and ["Mary Poppins"](http://www.imdb.com/title/tt0058331/?ref_=nv_sr_2) a sober 7.8. Although this is not the fairest of comparisons, it helps to introduce similar ratings. If one were to only look at the rating distribution, the abnormal peak at 1 would confirm IMDB's fears. But the approval ratio suggests true agreement between users over certain ratings, suggesting IMDB's secret filters are dangerously biased.
 
 To picture the review polarization, I ignored weight and made a 2d histogram of stars against approval.
 
 ![alt text](https://github.com/bezze/project-tfa/blob/master/figure_2.png "figure_2")
 
+The graph shows two well defined density peaks, one around 2.5 stars and 0.85 approval and another a bit more diffuse, but bigger in size around 8 stars and 0.3 apporval ratio. The blobs share roughly the same amount of reviews, easily identifiable as the "bad" and "good" reviews.
 
+```
+
+The data used is in the raw.dat file, extracted using the main.py python script on Monday 8th of May, 2017. The columns in the raw.dat file are as follows: stars, usefulness, total. The analysis was also performed in python, using the stats.py script. The files are easily tweakable to further investigate other films. 
